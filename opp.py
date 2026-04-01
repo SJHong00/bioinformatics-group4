@@ -82,7 +82,7 @@ if st.button("📈 성과 분석 실행"):
             fig, ax = plt.subplots(figsize=(12, 5))
             ax.plot(cumulative_ret_pct.index, cumulative_ret_pct, color='#9b59b6', linewidth=3, label='Portfolio')
             ax.axhline(y=0, color='red', linestyle='--', alpha=0.5) # 원금 기준선
-            ax.set_ylabel("수익률 (%)")
+            ax.set_ylabel("Return (%)")
             ax.grid(True, alpha=0.2)
             st.pyplot(fig)
 
